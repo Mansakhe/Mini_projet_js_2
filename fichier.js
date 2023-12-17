@@ -28,6 +28,8 @@ function showAlert(message, className){
 
     function ajoututilisateur(){
         event.preventDefault();
+        table.classList.remove("hide");
+        frm.classList.remove("hide");
 1    }
 
 
