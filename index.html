@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Crud_JS</title>
+</head>
+<body style="color: white; background-color:#1d2630;">
+ <div class="container">
+    <div class="text_center">
+         <h1 class="display-5 text-center my-3">CRUD APPLICATION</h1>
+    </div>
+    <div class="">
+        <a class=" text-left my-3 px-3  fw-bold color-rigth text-decoration-none" onclick="ajoututilisateur()" href=""><i class="fa-solid fa-users px-3"></i>Add User</a>
+   </div>
+    <div class="main row justify-content-center">
+        <form action="" id="student-form" class="row frm justify-content-center mb-4" autocomplete="off">
+            <div class="col-8 mb-3">
+                <label for="firstName">First Name</label>
+                <input class="form-control" id="firstname" type="text" placeholder="Entrer Votre Nom">
+            </div>
+            <div class="col-8 mb-3">
+                <label for="lastname">First Name</label>
+                <input class="form-control" id="lastname" type="text" placeholder="Entrer Votre roll no">
+            </div>
+            <div class="col-8 mb-3">
+                <label for="rollno">Roll no</label>
+                <input class="form-control" id="rollno" type="text" placeholder="Entrer Votre roll no">
+            </div>
+            <div class="col-8 mb-3 ">
+                <input class="btn btn-success add-btn" onclick="affichForm()" id="firstName" type="submit" value="Submit">
+            </div>
+        </form>
+        <div class="col-10 mt-5">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Roll No</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="student-List">
+                    <tr>
+                        <td>Dear</td>
+                        <td>Program</td>
+                        <td>25</td>
+                        <td>
+                            <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                            <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                         </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+ </div>
+    
+
+    <script src="fichier.js"></script>
+</body>
+</html>
+
